@@ -148,7 +148,14 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
+    "cron": {
+        "*/30 * * * *": [
+            "events_system.events_system.doctype.events_allocation.events_allocation.auto_update"
+            # events_system/events_system/events_system/doctype/events_allocation/events_allocation.py
+            #  "events_system.events_system.schedule_jobs.auto_update_cron"
+        ]
+    }
 # 	"all": [
 # 		"events_system.tasks.all"
 # 	],
@@ -164,7 +171,7 @@ app_license = "mit"
 # 	"monthly": [
 # 		"events_system.tasks.monthly"
 # 	],
-# }
+}
 
 # Testing
 # -------

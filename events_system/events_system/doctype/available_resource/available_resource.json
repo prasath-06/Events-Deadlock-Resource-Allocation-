@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-28 12:07:39.614631",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "room_strength",
+  "instructors_available",
+  "equipment_available"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "room_strength",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Room Strength"
+  },
+  {
+   "default": "0",
+   "fieldname": "instructors_available",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Instructors Available"
+  },
+  {
+   "default": "0",
+   "description": "1 set consists of MIC-1, PROJECTOR-1, CHAIRS-50,LAPTOP-1",
+   "fieldname": "equipment_available",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Equipment Available"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-30 12:26:23.544306",
+ "modified_by": "Administrator",
+ "module": "Events System",
+ "name": "Available Resource",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
